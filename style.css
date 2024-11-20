@@ -1,0 +1,110 @@
+/* Body */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0c9c9c, #139da1); /* Gradien hijau */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: white;
+}
+
+/* Kontainer utama */
+.game-container {
+  background: rgba(255, 255, 255, 0.9); /* Latar belakang semi-transparan */
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  text-align: center;
+  width: 350px;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Judul permainan */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Instruksi permainan */
+p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Inputan untuk menebak angka */
+input[type="number"] {
+  padding: 12px;
+  width: 80%;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  color: #333;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border: 2px solid #4caf50;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(76, 175, 80, 0.3);
+}
+
+/* Tombol kirim dan reset */
+button {
+  background: #4caf50;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Umpan balik hasil */
+#result {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* Pesan saat tebakan benar */
+#result.green {
+  color: #4caf50;
+}
+
+/* Pesan saat tebakan salah */
+#result.orange {
+  color: #ffa500;
+}
+
+/* Jumlah tebakan */
+#attempts {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Tombol Mulai Ulang */
+#reset-btn {
+  background-color: #f44336;
+  margin-top: 20px;
+}
+
+#reset-btn:hover {
+  background-color: #e53935;
+}
